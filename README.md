@@ -1,4 +1,4 @@
-# X and Y coordinate FlighPath Plotter
+# X and Y coordinate Flight Path Plotter
 
 This is a Python application that uses Pygame to create an interactive drawing environment with menu options for drawing, erasing, exporting coordinates, and hiding the menu.
 
