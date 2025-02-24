@@ -20,6 +20,8 @@ To start the application, run the following command in your terminal or command 
 ```sh
 python main.py
 ```
+## USER INTERFACE
+  ![image alt](https://github.com/Tofarati262/Flight_Path_Plotter/blob/26528420bdeecdfd02d51fc33efc343aeefbe1ba/Assets/image.png)
 
 ## Features
 - Draw on the screen within a defined perimeter box.
