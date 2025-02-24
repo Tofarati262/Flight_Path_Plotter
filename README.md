@@ -1,4 +1,4 @@
-# X and Y coordinate Flight Path Plotter
+### X and Y coordinate Flight Path Plotter
 
 This is a Python application that uses Pygame to create an interactive drawing environment with menu options for drawing, erasing, exporting coordinates, and hiding the menu.
 
@@ -14,22 +14,22 @@ Use the following command to install the required dependencies:
 pip install pygame
 ```
 
-## Running the Application
+### Running the Application
 To start the application, run the following command in your terminal or command prompt:
 
 ```sh
 python main.py
 ```
-## USER INTERFACE
+### USER INTERFACE
   ![image alt](https://github.com/Tofarati262/Flight_Path_Plotter/blob/26528420bdeecdfd02d51fc33efc343aeefbe1ba/Assets/image.png)
 
-## Features
+### Features
 - Draw on the screen within a defined perimeter box.
 - Erase the drawing.
 - Export drawn coordinates to `FlightCoordinates.csv`.
 - Toggle the menu visibility.
 
-## File Structure
+### File Structure
 ```
 project_directory/
 │-- main.py  # Main application script
@@ -37,7 +37,7 @@ project_directory/
 │-- draw.py  # Drawing utility functions
 ```
 
-## Exported Data
+### Exported Data
 When exporting, a file `FlightCoordinates.csv` will be created with the following format:
 
 ```
@@ -47,7 +47,7 @@ When exporting, a file `FlightCoordinates.csv` will be created with the followin
 ...
 ```
 
-## Controls
+### Controls
 - **Left Click**: Start drawing (if in DRAW mode) or erase (if in ERASE mode).
 - **Mouse Scroll Up/Down**: Zoom in/out.
 - **Menu Options**: Click on menu options to switch between modes.
