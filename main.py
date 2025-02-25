@@ -88,20 +88,20 @@ while running:
             for i, option in enumerate(options):
                 option_y = menu_y + (menuboxheight // (len(options) + 1)) * (i + 1)
                 if menu_x <= mouse_x <= menu_x + menuboxwidth and option_y - 10 <= mouse_y <= option_y + 10:
-                    if option == "DRAW":
+                    if option == "DRAW" and show_menu:
                         erase_mode = False
-                        Selected = "DRAW"
+                        Selected = "DRAWING"
                         print("draw")
-                    elif option == "ERASE":
+                    elif option == "ERASE" and show_menu:
                         erase_mode = True
                         drawn_path = []
-                        Selected = "ERASE"
+                        Selected = "ERASED"
                         print("erase")
                     elif option == "HIDE":
                         show_menu = not show_menu
-                        Selected = "HIDE"
+                        Selected = "HIDDEN"
                         print("hide")
-                    elif option == "EXPORT":
+                    elif option == "EXPORT" and show_menu:
                         if drawn_path:
                             print("Exporting....")
                             Selected = "EXPORTED"
@@ -169,6 +169,6 @@ while running:
     fps_text = font.render(f"STATE: {Selected}", True, (0, 0, 0))
     screen.blit(fps_text, (width - fps_text.get_width() -  200, 10))
     pygame.display.flip()
-    clock.tick(60)
+    clock.tick()
 
 pygame.quit()
